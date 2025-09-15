@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F1EADA;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+  --font-slab: var(--font-slab);
+  --color-tobacco: #B59E7D;
+  --color-mahogany: #584738;
+  --color-vanilla: #F1EADA;
+  --color-sand: #CEC1A8;
+  --color-mountain: #AAA396;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.word-animation {
+  animation: word-swap 6s infinite;
+}
+
+/* app/globals.css */
+
+.animated-word {
+  /* Hapus 'infinite', ganti dengan 'forwards' agar animasi berhenti di frame terakhir */
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/* Penundaan untuk setiap kata */
+.animated-word:nth-child(1) {
+  animation-name: slide-up-fade-in-out;
+  animation-delay: 0s;
+}
+.animated-word:nth-child(2) {
+  animation-name: slide-up-fade-in-out;
+  animation-delay: 2s;
+}
+.animated-word:nth-child(3) {
+  /* Gunakan animasi khusus yang tidak menghilang (fade out) */
+  animation-name: slide-up-fade-in-hold;
+  animation-delay: 4s;
+}
+
+/* Animasi untuk .ID */
+.id-animation {
+  opacity: 0; /* Mulai dalam keadaan tidak terlihat */
+  animation: slide-in-right 0.5s forwards; /* Durasi 0.5s, berhenti di akhir */
+  /* animation-delay: 4s; Mulai animasi setelah 6 detik */
+}
+
+
+/* Keyframes untuk kata 1 & 2 (muncul lalu hilang) */
+@keyframes slide-up-fade-in-out {
+  0%   { opacity: 0; transform: translateY(1em); }
+  5%   { opacity: 1; transform: translateY(0); }
+  33%  { opacity: 1; transform: translateY(0); }
+  38%  { opacity: 0; transform: translateY(-1em); }
+  100% { opacity: 0; }
+}
+
+/* Keyframes untuk kata ke-3 (muncul dan tetap terlihat) */
+@keyframes slide-up-fade-in-hold {
+  0%   { opacity: 0; transform: translateY(1em); }
+  5%   { opacity: 1; transform: translateY(0); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Keyframes untuk .ID (muncul dari kiri) */
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(1em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animation-wrapper {
+  /* Terapkan animasi pergeseran, durasi 0.5s, dan berhenti di akhir */
+  animation: shift-left 0.5s forwards;
+  /* Mulai animasi ini setelah 6 detik, bersamaan dengan munculnya .ID */
+  animation-delay: 6s;
+}
+
+@keyframes shift-left {
+  to {
+    /* Geser ke kiri. Anda bisa sesuaikan nilai ini agar pas sempurna */
+    transform: translateX(0.8em);
+  }
 }
