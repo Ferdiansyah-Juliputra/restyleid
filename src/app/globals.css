@@ -53,7 +53,7 @@ body {
 .id-animation {
   opacity: 0; /* Mulai dalam keadaan tidak terlihat */
   animation: slide-in-right 0.5s forwards; /* Durasi 0.5s, berhenti di akhir */
-  /* animation-delay: 4s; Mulai animasi setelah 6 detik */
+  animation-delay: 4s; 
 }
 
 
