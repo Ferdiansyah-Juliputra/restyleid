@@ -2,7 +2,8 @@
 
 "use client"
 import { useState, useEffect } from 'react';
-import AnimatedContent from '@/components/AnimatedContent'; // Pastikan path ini benar
+import AnimatedContent from '@/components/AnimatedContent'; 
+import Image from 'next/image';
 
 export default function Home() {
   const [isIntro, setIsIntro] = useState(true);
@@ -74,7 +75,15 @@ export default function Home() {
                     Ultimately, our vision is to <strong>become a leading thrift brand in Indonesia</strong>, inspiring people to choose sustainability without compromising on a style that is both timeless and accessible.
                   </p>
                 </div>
-                <div className="div2 text-center">Contoh Foto Product</div>
+                <div className="div2 text-center">
+                  <Image 
+                    src="/logo.png" 
+                    alt="Logo" 
+                    width={300} 
+                    height={300} 
+                    className="max-w-full object-contain rounded-2xl"
+                  />
+                </div>
                 <div className="div3 text-center">Link Shopee dan Catalog</div>
                 <div className="div4 flex flex-col items-start justify-start">
                   <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-base leading-relaxed font-normal text-mahogany text-justify">
