@@ -65,7 +65,7 @@ export default function Home() {
             scale={1}
             threshold={0}
           >
-            <div className="w-full max-w-6xl mx-auto mainGrid">
+            <div className="w-full max-w-6xl mx-auto mainGrid ">
               <div className="parent">
                 <div className="div1 flex flex-col items-start justify-start">
                   <p className="text-base sm:text-lg md:text-xl font-normal text-mahogany text-justify">
