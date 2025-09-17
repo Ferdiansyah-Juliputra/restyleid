@@ -77,7 +77,7 @@ export default function Home() {
                 <div className="div2 text-center">Contoh Foto Product</div>
                 <div className="div3 text-center">Link Shopee dan Catalog</div>
                 <div className="div4 flex flex-col items-start justify-start">
-                  <p className="ttext-sm sm:text-base md:text-base lg:text-sm xl:text-base leading-relaxed font-normal text-mahogany text-justify">
+                  <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-base leading-relaxed font-normal text-mahogany text-justify">
                     Guided by core values of <strong>sustainability, style, and affordability</strong>, 
                     ReStyle.ID makes eco-friendly fashion accessible to everyone. Available through our Instagram and online 
                     marketplace platforms, our curated collection of thrift clothing spans vintage, streetwear, casual, and formal 
