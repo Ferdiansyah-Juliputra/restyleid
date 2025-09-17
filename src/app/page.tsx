@@ -81,7 +81,7 @@ export default function Home() {
                     alt="Logo"
                     width={300}
                     height={300}
-                    className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain rounded-2xl"
+                    className="w-80 h-80 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain rounded-2xl"
                   />
                 </div>
                 <div className="div3 text-center">Link Shopee dan Catalog</div>
