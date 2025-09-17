@@ -135,7 +135,7 @@ export default function Home() {
                 <div className="bg-sand p-6 rounded-2xl flex items-start space-x-4">
                   <div>
                     <h3 className="font-bold text-xl sm:text-2xl text-mahogany mb-1">Fun & Accessible Shopping</h3>
-                    <p className="text-mahogany text-base sm:text-lg md:text-xl mt-4">We're active on social media to make your thrift shopping experience enjoyable.</p>
+                    <p className="text-mahogany text-base sm:text-lg md:text-xl mt-4">We&apos;s re active on social media to make your thrift shopping experience enjoyable.</p>
                   </div>
                 </div>
               </div>
