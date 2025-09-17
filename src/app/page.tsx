@@ -68,7 +68,7 @@ export default function Home() {
             <div className="w-full max-w-6xl mx-auto mainGrid ">
               <div className="parent">
                 <div className="div1 flex flex-col items-start justify-start">
-                  <p className="text-base sm:text-lg md:text-xl font-normal text-mahogany text-justify">
+                  <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-base leading-relaxed font-normal text-mahogany text-justify">
                     Based in Surabaya, <strong>ReStyle.ID</strong> is a sustainable thrift shop dedicated to giving pre-loved fashion a new life. 
                     Our mission is to <strong>promote eco-friendly fashion by offering high-quality</strong>, <strong>affordable thrifted clothing while reducing textile waste. </strong> 
                     Ultimately, our vision is to <strong>become a leading thrift brand in Indonesia</strong>, inspiring people to choose sustainability without compromising on a style that is both timeless and accessible.
@@ -77,7 +77,7 @@ export default function Home() {
                 <div className="div2 text-center">Contoh Foto Product</div>
                 <div className="div3 text-center">Link Shopee dan Catalog</div>
                 <div className="div4 flex flex-col items-start justify-start">
-                  <p className="text-base sm:text-lg md:text-xl font-normal text-mahogany text-justify">
+                  <p className="ttext-sm sm:text-base md:text-base lg:text-sm xl:text-base leading-relaxed font-normal text-mahogany text-justify">
                     Guided by core values of <strong>sustainability, style, and affordability</strong>, 
                     ReStyle.ID makes eco-friendly fashion accessible to everyone. Available through our Instagram and online 
                     marketplace platforms, our curated collection of thrift clothing spans vintage, streetwear, casual, and formal 
@@ -135,7 +135,7 @@ export default function Home() {
                 <div className="bg-sand p-6 rounded-2xl flex items-start space-x-4">
                   <div>
                     <h3 className="font-bold text-xl sm:text-2xl text-mahogany mb-1">Fun & Accessible Shopping</h3>
-                    <p className="text-mahogany text-base sm:text-lg md:text-xl mt-4">We&apos;s re active on social media to make your thrift shopping experience enjoyable.</p>
+                    <p className="text-mahogany text-base sm:text-lg md:text-xl mt-4">We&apos;re active on social media to make your thrift shopping experience enjoyable.</p>
                   </div>
                 </div>
               </div>
