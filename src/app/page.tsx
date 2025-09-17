@@ -75,13 +75,13 @@ export default function Home() {
                     Ultimately, our vision is to <strong>become a leading thrift brand in Indonesia</strong>, inspiring people to choose sustainability without compromising on a style that is both timeless and accessible.
                   </p>
                 </div>
-                <div className="div2 text-center">
-                  <Image 
-                    src="/logo.png" 
-                    alt="Logo" 
-                    width={300} 
-                    height={300} 
-                    className="max-w-full object-contain rounded-2xl"
+                <div className="div2 flex items-center justify-center p-4">
+                  <Image
+                    src="/logo.png"
+                    alt="Logo"
+                    width={300}
+                    height={300}
+                    className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain rounded-2xl"
                   />
                 </div>
                 <div className="div3 text-center">Link Shopee dan Catalog</div>
